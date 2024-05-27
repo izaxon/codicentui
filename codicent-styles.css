@@ -1,0 +1,38 @@
+/* codicent-styles.css */
+.codicent-message-count {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f4f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.codicent-message-count .number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.codicent-message-count .label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.codicent-tag-input {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#codicent-tag-input {
+  padding: 5px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+#codicent-update-tag {
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
