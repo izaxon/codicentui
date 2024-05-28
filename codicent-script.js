@@ -28,8 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
          </div>
        `;
          const id = element.getAttribute('id');
+         const otherAttributes = Array.from(element.attributes).filter(attr => !attr.name.startsWith('data-') && attr.name !== 'id');
          element.innerHTML = componentHTML;
          element.setAttribute('id', id || "codicent-message-count-" + index);
+         otherAttributes.forEach(attr => element.setAttribute(attr.name, attr.value));
          fetchMessageCount(tag, element);
       };
 
